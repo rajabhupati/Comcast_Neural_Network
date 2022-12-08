@@ -5,3 +5,8 @@ import io
 import pandas as pd
 dataframe = pd.read_csv(io.BytesIO(uploaded['iris.csv']))
 dataframe.head()
+
+import numpy as np
+arr1 = np.array([100, 300, 200, 500, -400])
+print (arr1, type(arr1))
+print (np.argmax(arr1), np.argmin(arr1))
